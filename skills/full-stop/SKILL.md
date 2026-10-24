@@ -10,8 +10,11 @@ Never merge it.
 
 Read [full-send](../full-send/SKILL.md) and follow its workflow, proof rules,
 review, and babysitting steps. An explicit "full stop" request authorizes that
-work without a separate "full send" request. Its merge permission does not
-apply. The overrides below take precedence.
+work without a separate "full send" request. That includes full-send's
+testing permission. A "full stop" request is the permission for the test
+methods Proof needs, even when a project file says to ask first, for
+example before computer use. Use those methods directly. Its merge
+permission does not apply. The overrides below take precedence.
 
 ## No merging
 

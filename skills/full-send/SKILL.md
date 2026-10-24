@@ -17,6 +17,28 @@ The user grants you permission to:
 
 - Merge the PR once the merge gate passes.
 - Force-push the PR's own branch with `--force-with-lease` after a rebase.
+- Use the test methods that Proof needs, without asking first.
+
+## Testing permission
+
+A "full send" request is the permission. If a project file or other
+instruction says to ask before a test method, or to leave testing to the
+user, this request replaces that rule for this task.
+
+That includes ask-first rules for computer use, browser automation,
+simulators and devices, running the app or a dev server, screenshots, and
+visual checks. Use the method that gives direct proof. List it in the
+report.
+
+Rules about how to test still apply. Follow rules that name the correct
+command, fixture, or check. This permission only removes the ask-first or
+leave-it-to-the-user step. If a preferred method cannot prove the change,
+use a gated method under this permission.
+
+It covers only the tests needed for this task. It does not add permission
+for the steps under "Asking the user", such as production changes or data
+deletion. It also does not bypass a harness or system approval prompt if
+one appears.
 
 ## Steps
 
