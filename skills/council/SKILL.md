@@ -20,6 +20,29 @@ Give each delegate the request and relevant context. For review or feedback,
 keep their work read-only. Collect their responses and summarize the useful
 findings, disagreements, and recommended next steps.
 
+For a code review, ask each delegate for a score out of 10.
+Count each full review pass as one round.
+A fresh review after fixes starts a new round.
+
+If the work ends in a pull request, put the results in the PR description.
+Put this section before the model and harness line at the end:
+
+```markdown
+## Council review
+
+Rounds: 2
+
+| Delegate | Round 1 | Round 2 |
+| --- | --- | --- |
+| Claude Opus | 7/10 | 9/10 |
+| GPT Sol | 8/10 | 10/10 |
+| Gemini Pro | 7/10 | 9/10 |
+```
+
+If a delegate gives no score, write `no score`. Do not invent one.
+If the PR is open, edit the description. Do not post a comment for this.
+If there is no PR, put the same results in the final reply only.
+
 If you agree with their recommendations, make the changes and request a fresh
 review after. Continue this process until all delegates are satisfied with the
 outcome.
